@@ -27,6 +27,6 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 ## Screenshot
-
+![Alt text](./app_image.png?raw=true "Optional Title")
 
 ## Learn More
