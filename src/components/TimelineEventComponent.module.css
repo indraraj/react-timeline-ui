@@ -15,13 +15,13 @@
   animation: circleInfo 1s ease-out 1s;
   animation-fill-mode: both;
 }
-.content {
+.timelineEvent {
   width: 500px;
   display: flex;
-  animation: mycontent 1s ease-out 1s;
+  animation: contentAnimation 1s ease-out 1s;
   animation-fill-mode: both;
 }
-.mycontent {
+.content {
   border-radius: 10px;
   border-right: 1px solid #b5b5b5;
   min-height: 150px;
@@ -48,13 +48,13 @@
   animation: circleInfo 1s ease-out 1s;
   animation-fill-mode: both;
 }
-.contentLeft {
+.timelineEventLeft {
   width: 500px;
   display: flex;
-  animation: mycontentLeft 1s ease-out 1s;
+  animation: contentLeftAnimation 1s ease-out 1s;
   animation-fill-mode: both;
 }
-.mycontentLeft {
+.contentLeft {
   border-radius: 10px;
   border-left: 1px solid #b5b5b5;
   min-height: 150px;
@@ -63,7 +63,7 @@
   width: inherit;
   box-shadow: 2px 5px 10px 5px #c8c5c5;
 }
-.contentLeft::after {
+.timelineEventLeft::after {
   top: 12px;
   content: "";
   width: 0;
@@ -73,7 +73,7 @@
   border-left: 20px solid #335979;
   border-bottom: 12px solid transparent;
 }
-.content::before {
+.timelineEvent::before {
   top: 10px;
   content: "";
   width: 0;
@@ -103,7 +103,7 @@
     visibility: visible;
   }
 }
-@keyframes mycontent {
+@keyframes contentAnimation {
   from {
     margin-left: 150px;
     visibility: hidden;
@@ -113,7 +113,7 @@
     visibility: visible;
   }
 }
-@keyframes mycontentLeft {
+@keyframes contentLeftAnimation {
   from {
     margin-right: 150px;
     visibility: hidden;

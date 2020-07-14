@@ -1,18 +1,18 @@
 import React, { FunctionComponent } from "react";
 
-import styles from "./LifeEventComponent.module.css";
+import styles from "./TimelineDotEventComponent.module.css";
 
-interface ILifeEventComponentProps {
+interface ITimelineDotEventComponentProps {
   content: string;
 }
 
-export const LifeEventComponent: FunctionComponent<ILifeEventComponentProps> = (
+export const TimelineDotEventComponent: FunctionComponent<ITimelineDotEventComponentProps> = (
   props
 ) => {
   return (
     <div className={"expLists"}>
       <div className={styles.datalist}>
-        <div className={styles.content}>
+        <div className={styles.timelineEvent}>
           <span className={styles.tooltiptext}>{props.content}</span>
         </div>
       </div>

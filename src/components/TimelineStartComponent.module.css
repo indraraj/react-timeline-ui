@@ -1,0 +1,19 @@
+@keyframes timelineStart {
+  from {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 1px lightgray;
+  }
+  to {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 3px lightgray;
+  }
+}
+
+.timelineStartImage {
+  animation: timelineStart 2s ease-out;
+  animation-fill-mode: both;
+}
